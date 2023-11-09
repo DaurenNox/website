@@ -88,6 +88,7 @@ h4 {
   color:White;
 }
 
+
 p {
   line-height: 24px;
   margin: 0;
@@ -237,7 +238,9 @@ p {
   flex-direction: column;
   align-items: flex-start; /* Aligns items to the start of the flex container */
 }
-
+.icon_block h4{
+  color:rgb(0, 36, 84)
+}
 .icon_title {
   /* This turns the h4 into a flex container, aligning the image and text inline */
   display: flex;
