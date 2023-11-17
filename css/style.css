@@ -637,35 +637,43 @@ img {
 ---------------------------------*/
 
 .client_logos {
-  background: rgb(0, 36, 84);
-  padding: 60px 0;
-  margin-top: 60px;
+  background: #002366; /* Your chosen background color */
+  display: flex;
+  justify-content: space-between; /* Distributes logos evenly from edge to edge */
+  align-items: center;
+  width: 100vw; /* Sets the width to the full viewport width */
+  margin: 0; /* Reset default margin */
+  padding: 60px 0; /* Top and bottom padding, no horizontal padding */
+  box-sizing: border-box; /* Includes padding in the element's total width */
+  overflow-x: hidden; /* Hide horizontal overflow */
 }
 
 .client_logos ul {
-  padding: 0;
-  margin: 0;
+  display: flex;
+  justify-content: space-between; /* Distributes logos evenly from edge to edge */
+  align-items: center;
+  width: 100%; /* Ensures the ul takes up the full width of its parent */
   list-style: none;
-  text-align: center;
+  padding: 0; /* Reset horizontal padding */
+  margin: 0; /* Reset horizontal margin */
+  max-width: 100%; /* Ensure the ul does not exceed the width of the client_logos */
 }
 
 .client_logos ul li {
-  display: inline;
-  margin: 0 25px;
+  /* Let each logo take up as much space as it needs */
+  margin: 0; /* Removes margin from the list items */
 }
 
-.client_logos ul a {
-  display: inline-block;
-  margin: 0 20px;
+.client_logos ul li img {
+  max-height: 120px; /* Standard max-height for logos */
+  width: auto; /* Width auto for maintaining aspect ratio */
+  object-fit: contain; /* Ensures the logo fits within the dimensions */
 }
 
-.page_section.team {
-  padding: 60px 0;
+.client_logos ul li img.large-logo {
+  max-height: 30px; /* Adjust this value for the PRIME logo */
 }
 
-.page_section.team h6 {
-  margin-bottom: 40px;
-}
 
 /* Team
 ---------------------------------*/
@@ -1683,12 +1691,35 @@ div.mc-image {
   #clients {
     padding: 40px 0;
   }
-  .client_logos ul li {
-    display: inline;
-    margin: 0 25px;
-    padding: 11px 0;
-    display: inline-block;
+  .client_logos {
+    flex-direction: column; /* Stack items vertically */
+    padding: 30px 0; /* Adjust padding for mobile */
   }
+
+  .client_logos ul {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .client_logos ul li {
+    /* Remove side margins for mobile */
+    margin: 20px 0; /* Add vertical margin for spacing */
+    width: 100%; /* Full width for each logo */
+  }
+
+  .client_logos ul li img {
+    /* Adjust logo size for mobile */
+    max-height: 90px; /* Smaller max-height for logos */
+    margin: 0 auto; /* Center logos horizontally */
+  }
+
+  .client_logos ul li img.large-logo {
+    max-height: 200px; /* Larger size for the PRIME logo */
+    margin: auto; /* Centers the image within its container */
+    max-width: 100%;
+    display: block; /* Ensures the image is treated as a block-level element */
+    margin-left:25px;
+  }
+  
   .social_links li {
     float: left;
   }
