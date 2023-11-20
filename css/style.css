@@ -89,8 +89,6 @@ h4 {
 
 
 p {
-  line-height: 24px;
-  margin: 0;
   font-family: "Raleway", sans-serif;
 }
 
@@ -132,6 +130,9 @@ p {
 }
 .company-name:hover {
   opacity: 1; /* Full opacity on hover */
+}
+.company-name .not-bold {
+  font-weight: normal; /* This specifically targets the .not-bold class within .company-name */
 }
 .res-nav_click {
   display: none;
@@ -960,7 +961,7 @@ line-height: 1.4;
 }
 
 .contact_info p {
-  line-height: 28px;
+  line-height: 20px;
   display: block;
   font-size: 16px;
   color: #ffffff;
