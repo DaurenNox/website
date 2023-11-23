@@ -170,11 +170,11 @@ p {
 }
 
 .navStyle ul li:first-child {
-  /*margin:0px;*/
+  margin:0 5px;
 }
 
 .navStyle ul li:last-child {
-  margin: 0 0 0 23px;
+  margin: 0 5px;
 }
 
 .navStyle ul li a {
