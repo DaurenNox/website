@@ -1744,7 +1744,6 @@ div.mc-image {
   }
 
   .navStyle ul li {
-    margin: 5px 0; /* Stack the items vertically with space */
   }
   .navStyle {
     width: 100%; /* Full width for mobile */
@@ -1752,7 +1751,6 @@ div.mc-image {
   }
 
   .navStyle ul li {
-    margin: 5px 0; /* Stack the items vertically with space */
   }
   .hero_section {
     position: relative;
@@ -1860,7 +1858,6 @@ div.mc-image {
     text-align: center;
   }
   .navStyle ul li:last-child {
-    margin: 0px;
   }
   .navbar-inverse .navbar-nav > li > a {
     color: #222;
