@@ -107,7 +107,10 @@ p {
 }
 .logo-container {
   display: flex; /* Enables Flexbox layout */
-  align-items: center; /* Centers items vertically */
+  align-items: center; 
+  justify-content: space-between;
+  padding: 10px;
+/* Centers items vertically */
   /* Ensure there is no default margin/padding that might offset the layout */
 }
 
@@ -115,7 +118,7 @@ p {
   /* Your existing styles */
   float: none; /* Remove float as it's not needed with flexbox */
   margin-top: 0; /* Managed by the flex container now */
-  width: 100px; /* Maintain your set width */
+  max-width: 100px; /* Adjust the maximum width of the logo */
   height: auto; /* Maintain aspect ratio */
 }
 
@@ -127,7 +130,14 @@ p {
   text-shadow: 1px 1px 2px rgba(4, 15, 160, 0.25); /* subtle shadow for depth */
   padding: 5px 0; /* Padding for spacing */
   font-weight: bold; /* Bold font weight for prominence */
+  text-align: left;
+
 }
+
+.company-name p {
+  margin: 5px 0;
+}
+
 .company-name:hover {
   opacity: 1; /* Full opacity on hover */
 }
@@ -1700,6 +1710,9 @@ div.mc-image {
   display: inherit;
   padding: 0;
 }
+.mobile-br {
+  display: none;
+}
 
 /*
    Media Queries
@@ -1708,11 +1721,22 @@ div.mc-image {
 }
 @media (max-width: 768px) {
   p {
-    font-size: 14px;
+    font-size: 18px;
   }
+  .mobile-br {
+    display: inline; /* Display <br> for mobile devices */
+  }
+  .company-name {
+    text-align: left;
+  }
+
   .header_box {
     flex-direction: column;
+  }  
+  .company-name p {
+    display: block; /* Display each paragraph on a new line for mobile devices */
   }
+
 
   .navStyle {
     width: 100%; /* Full width for mobile */
