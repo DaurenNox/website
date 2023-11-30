@@ -72,11 +72,11 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">语言<b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="index_kz.html">哈文</a></li>
-            <li><a href="index.html">俄文</a></li>
-            <li><a href="index_en.html">英文</a></li>
-            <li><a href="index_cn.html">中文</a></li>
-
+            <li><a href="index_kz.html"><span>&#x1F1F0;&#x1F1FF;</span> Қазақ</a></li>
+            <li><a href="index.html"><span>&#x1F1F7;&#x1F1FA;</span> Русский</a></li>
+            <li><a href="index_en.html"><span>&#x1F1FA;&#x1F1F8;</span> English</a></li>
+            <li><a href="index_cn.html"><span>&#x1F1E8;&#x1F1F3;</span> 中文</a></li>
+            
             <!-- Добавьте другие языки по мере необходимости -->
           </ul>
         </li>
@@ -172,7 +172,8 @@
         <li class="partner-item">          <a href="https://www.drg.kz/" target="_blank">
             <img src="img/damu.png" alt="DAMU Research Group Logo" style="margin-top:50px">
           </a>
-          <span class="partner-name">Damu Research Group 机构<br/></span>
+          <span class="partner-name">Агентство DAMU<br/> Research Group</span>
+          <a target="_blank" href="" class="partner-name" style="margin-top:20px">合作备忘录</a>
 
         </li>
         <!-- <li class="partner-item">          <a href="https://iwep.kz/#/" target="_blank">
@@ -185,13 +186,15 @@
             <img src="img/center.png" alt="CAITEC Logo">
           </a>
           <span class="partner-name">Policy Research Institute<br/> of Market Economy, PRIME</span>
+          <a target="_blank" href="https://drive.google.com/file/d/13NBbmmB2q08ttRf-AgjstTaaqu6RADpl/view?usp=sharing" class="partner-name" style="margin-top:20px">研究领域的合作备忘录</a>
 
         </li>
         <li class="partner-item">          <a href="https://www.caitec.org.cn/" target="_blank">
-            <img src="img/CAITEC.png" class="large-logo" alt="PRIME Logo" style="margin-top:70px; margin-bottom:50px">
+            <img src="img/CAITEC.png" class="large-logo" alt="PRIME Logo" style="margin-top:50px; margin-bottom:50px">
           </a>
           <span class="partner-name">Chinese Academy of International Trade<br/> and Economic Cooperation</span>
-
+          <a target="_blank" href="https://drive.google.com/file/d/1ngqz21YD2xdS_kNiI4SaTXkEMRDhl6n6/view?usp=sharing" class="partner-name" style="margin-top:20px">贸易和经济研究领域的谅解备忘录</a>
+      
         </li>
               </ul>
     </div>
@@ -314,13 +317,20 @@
         
         <div class="col-lg-8 wow fadeInLeft delay-06s">
           
-          <div class="form">
+          <form
+          action="https://formspree.io/f/xyyqqlwv"
+          method="POST" class="form">
+        
+         
             
-            <input class="input-text" type="text" name="" value="全名 *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-            <input class="input-text" type="text" name="" value="邮箱 *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+            <!-- <input class="input-text" type="text" name="" value="ФИО *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;"> -->
+            <!-- <input class="input-text" type="text" name="" value="Ваш email *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;"> -->
+            <input class="input-text" type="text" name="text" value="全名">
+            <input class="input-text" type="email" name="email" value="邮箱">
             <textarea class="input-text text-area" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">信息... *</textarea>
             <input class="input-btn" type="submit" value="发送">
-          </div>
+          </form>
+          
         </div>
       </div>
       

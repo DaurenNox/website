@@ -4,8 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, maximum-scale=1">
 
-<title>САУДА-ЭКОНОМИКАЛЫҚ
-  СТРАТЕГИЯЛАР ОРТАЛЫҒЫ
+<title>САУДА-ЭКОНОМИКАЛЫҚ СТРАТЕГИЯЛАР ОРТАЛЫҒЫ
   </title>
  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 <link rel="icon" href="favicon.png" type="image/png">
@@ -74,11 +73,11 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">ТІЛ <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="index_kz.html">Қазақ</a></li>
-            <li><a href="index.html">Орыс</a></li>
-            <li><a href="index_en.html">Ағылшын</a></li>
-            <li><a href="index_cn.html">Қытай</a></li>
-
+            <li><a href="index_kz.html"><span>&#x1F1F0;&#x1F1FF;</span> Қазақ</a></li>
+            <li><a href="index.html"><span>&#x1F1F7;&#x1F1FA;</span> Русский</a></li>
+            <li><a href="index_en.html"><span>&#x1F1FA;&#x1F1F8;</span> English</a></li>
+            <li><a href="index_cn.html"><span>&#x1F1E8;&#x1F1F3;</span> 中文</a></li>
+            
             <!-- Добавьте другие языки по мере необходимости -->
           </ul>
         </li>
@@ -184,7 +183,8 @@
         <li class="partner-item">          <a href="https://www.drg.kz/" target="_blank">
             <img src="img/damu.png" alt="DAMU Research Group Logo" style="margin-top:50px">
           </a>
-          <span class="partner-name">DAMU<br/> Research Group Агенттігі</span>
+          <span class="partner-name">Агентство DAMU<br/> Research Group</span>
+          <a target="_blank" href="" class="partner-name" style="margin-top:20px">Ынтымақтастық туралы меморандум</a>
 
         </li>
         <!-- <li class="partner-item">          <a href="https://iwep.kz/#/" target="_blank">
@@ -197,12 +197,14 @@
             <img src="img/center.png" alt="CAITEC Logo">
           </a>
           <span class="partner-name">Policy Research Institute<br/> of Market Economy, PRIME</span>
+          <a target="_blank" href="https://drive.google.com/file/d/13NBbmmB2q08ttRf-AgjstTaaqu6RADpl/view?usp=sharing" class="partner-name" style="margin-top:20px">Ғылыми-зерттеу саласындағы <br> ынтымақтастық туралы меморандум</a>
 
         </li>
         <li class="partner-item">          <a href="https://www.caitec.org.cn/" target="_blank">
             <img src="img/CAITEC.png" class="large-logo" alt="PRIME Logo" style="margin-top:70px; margin-bottom:50px">
           </a>
           <span class="partner-name">Chinese Academy of International Trade<br/> and Economic Cooperation</span>
+          <a target="_blank" href="https://drive.google.com/file/d/1vZwd_wPHsvVc8a5KK9Mw22rQvIRNQqCA/view?usp=sharing" class="partner-name" style="margin-top:20px">Сауда-экономикалық зерттеулер саласындағы <br> өзара түсіністік туралы меморандум</a>
 
         </li>
               </ul>
@@ -336,13 +338,20 @@
         
         <div class="col-lg-8 wow fadeInLeft delay-06s">
           
-          <div class="form">
-            
-            <input class="input-text" type="text" name="" value="ТӘАЖ *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-            <input class="input-text" type="text" name="" value="Сіздің Email *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-            <textarea class="input-text text-area" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Хабарлама... *</textarea>
-            <input class="input-btn" type="submit" value="ЖІБЕРУ">
-          </div>
+            <form
+            action="https://formspree.io/f/xyyqqlwv"
+            method="POST" class="form">
+          
+           
+              
+              <!-- <input class="input-text" type="text" name="" value="ФИО *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;"> -->
+              <!-- <input class="input-text" type="text" name="" value="Ваш email *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;"> -->
+              <input class="input-text" type="text" name="text" value="ТӘАЖ">
+              <input class="input-text" type="email" name="email" value="Сіздің Email">
+              <textarea class="input-text text-area" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Хабарлама... *</textarea>
+              <input class="input-btn" type="submit" value="ЖІБЕРУ">
+            </form>
+  
         </div>
       </div>
       

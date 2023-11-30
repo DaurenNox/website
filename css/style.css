@@ -34,7 +34,7 @@ a:active {
 }
 .clearfix:before,
 .clearfix:after {
-  content: "\0020";
+  content: "0020";
   display: block;
   overflow: hidden;
   visibility: hidden;
@@ -62,7 +62,6 @@ h2 {
   color: rgb(0, 36, 84);
   font-family: "Raleway", sans-serif;
   font-weight: normal;
-  margin: 0px 0 25px 0;
   text-align: center;
   text-transform: uppercase;
 }
@@ -1723,6 +1722,7 @@ div.mc-image {
   p {
     font-size: 18px;
   }
+  
   .mobile-br {
     display: inline; /* Display <br> for mobile devices */
   }
@@ -1763,7 +1763,6 @@ div.mc-image {
     font-size: 25px;
     color: #fff;
     line-height: 39px;
-    margin: 0 0 9px 0;
   }
   .inner_section {
     padding: 20px 0 20px;
@@ -1792,7 +1791,7 @@ div.mc-image {
   .page_section.team {
     padding: 40px 0;
   }
-  ,
+  
   #clients {
     padding: 40px 0;
   }
@@ -1836,7 +1835,6 @@ div.mc-image {
     font-size: 30px;
   }
   .page_section.contact {
-    padding: 60px 0 50px;
   }
   .navbar-inverse .navbar-toggle .icon-bar {
     background: rgb(0, 36, 84);
@@ -1868,4 +1866,5 @@ div.mc-image {
   .team_area {
     width: 99%;
   }
+  
 }
