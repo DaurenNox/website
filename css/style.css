@@ -112,6 +112,22 @@ p {
 /* Centers items vertically */
   /* Ensure there is no default margin/padding that might offset the layout */
 }
+#mainNav li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+#mainNav li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333; /* Set the desired text color */
+}
+
+#mainNav li img {
+  margin-right: 5px; /* Adjust the margin as needed */
+}
 
 .logo {
   /* Your existing styles */
@@ -1743,14 +1759,14 @@ div.mc-image {
     justify-content: center; /* Center navigation on mobile */
   }
 
-  .navStyle ul li {
-  }
   .navStyle {
     width: 100%; /* Full width for mobile */
     justify-content: center; /* Center navigation on mobile */
   }
 
   .navStyle ul li {
+    display:inline;
+    
   }
   .hero_section {
     position: relative;

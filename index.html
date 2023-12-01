@@ -72,11 +72,11 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Язык<b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="index_kz.html"><span>&#x1F1F0;&#x1F1FF;</span> Қазақ</a></li>
-            <li><a href="index.html"><span>&#x1F1F7;&#x1F1FA;</span> Русский</a></li>
-            <li><a href="index_en.html"><span>&#x1F1FA;&#x1F1F8;</span> English</a></li>
-            <li><a href="index_cn.html"><span>&#x1F1E8;&#x1F1F3;</span> 中文</a></li>
-                        <!-- Добавьте другие языки по мере необходимости -->
+<li><a href="index_kz.html"><img src="./img/circle.png" style="max-width:20px" alt="Kazakh" /> Қазақ</a></li>
+<li><a href="index.html"><img src="./img/russia.png" style="max-width:20px" alt="Russian" /> Русский</a></li>
+<li><a href="index_en.html"><img src="./img/usa.png" style="max-width:20px" alt="English" /> English</a></li>
+<li><a href="index_cn.html"><img src="./img/china.png" style="max-width:20px" alt="Chinese" /> 中文</a></li>
+                                    <!-- Добавьте другие языки по мере необходимости -->
           </ul>
         </li>
 
@@ -323,12 +323,10 @@
         
          
             
-            <!-- <input class="input-text" type="text" name="" value="ФИО *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;"> -->
-            <!-- <input class="input-text" type="text" name="" value="Ваш email *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;"> -->
-            <input class="input-text" type="text" name="text" value="ФИО"; onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
-            <input class="input-text" type="email" name="email" value="Ваш e-mail"; onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+            <input class="input-text" type="text" name="name" id="full-name" placeholder="ФИО" required="">
+            <input class="input-text" type="email" name="email" value="Ваш e-mail" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
 
-            <textarea class="input-text text-area" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Сообщение... *</textarea>
+            <textarea class="input-text text-area" rows="5" name="message" id="message" placeholder="Сообщение..." required="" spellcheck="false" data-ms-editor="true"></textarea>
             <input class="input-btn" type="submit" value="Отправить">
           </form>
         </div>

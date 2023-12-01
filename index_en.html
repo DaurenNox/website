@@ -342,11 +342,10 @@ forecasts in the field of trade, transport, and economic policy.</p>
         
          
             
-            <!-- <input class="input-text" type="text" name="" value="ФИО *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;"> -->
-            <!-- <input class="input-text" type="text" name="" value="Ваш email *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;"> -->
-            <input class="input-text" type="text" name="text" value="Full name">
-            <input class="input-text" type="email" name="email" value="E-mail">
-            <textarea class="input-text text-area" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">Message... *</textarea>
+            <input class="input-text" type="text" name="name" id="full-name" placeholder="Full Name" required="">
+            <input class="input-text" type="email" name="email" value="E-mail" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+
+            <textarea class="input-text text-area" rows="5" name="message" id="message" placeholder="Message..." required="" spellcheck="false" data-ms-editor="true"></textarea>
             <input class="input-btn" type="submit" value="Send">
           </form>
       </div>

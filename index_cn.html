@@ -323,14 +323,13 @@
         
          
             
-            <!-- <input class="input-text" type="text" name="" value="ФИО *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;"> -->
-            <!-- <input class="input-text" type="text" name="" value="Ваш email *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;"> -->
-            <input class="input-text" type="text" name="text" value="全名">
-            <input class="input-text" type="email" name="email" value="邮箱">
-            <textarea class="input-text text-area" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">信息... *</textarea>
+            <input class="input-text" type="text" name="name" id="full-name" placeholder="全名" required="">
+            <input class="input-text" type="email" name="email" value="邮箱" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+
+            <textarea class="input-text text-area" rows="5" name="message" id="message" placeholder="信息..." required="" spellcheck="false" data-ms-editor="true"></textarea>
             <input class="input-btn" type="submit" value="发送">
           </form>
-          
+
         </div>
       </div>
       
