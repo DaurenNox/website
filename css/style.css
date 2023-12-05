@@ -497,9 +497,7 @@ a.read_more2:hover {
   line-height: 20px;
 }
 ul.animated {
-  list-style-type: disc; /* This adds the bullet points back */
-  padding-left: px;   /* This adds some space before the bullets */
-  text-align: center; 
+  text-align: left; 
   color:rgb(0, 0, 0);    /* This aligns the text to the left */
 }
 
